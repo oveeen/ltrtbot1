@@ -38,3 +38,342 @@ telegram.error.Unauthorized: Unauthorized
 2018-06-18 15:05:48,434 - telegram.ext.dispatcher - CRITICAL - stopping due to exception in another thread
 2018-06-18 15:05:48,435 - telegram.ext.dispatcher - DEBUG - Dispatcher thread stopped
 2018-06-18 15:05:48,444 - telegram.ext.updater - DEBUG - dispatcher - ended
+2018-06-18 15:22:06,284 - telegram.ext.dispatcher - DEBUG - Setting singleton dispatcher as <telegram.ext.dispatcher.Dispatcher object at 0x7fc7a9f8f7b8>
+2018-06-18 15:22:06,285 - JobQueue - DEBUG - JobQueue thread started
+2018-06-18 15:22:06,285 - telegram.ext.updater - DEBUG - dispatcher - started
+2018-06-18 15:22:06,285 - telegram.ext.updater - DEBUG - updater - started
+2018-06-18 15:22:06,286 - telegram.ext.updater - DEBUG - Updater thread started (polling)
+2018-06-18 15:22:06,286 - telegram.ext.updater - DEBUG - Start network loop retry bootstrap del webhook
+2018-06-18 15:22:06,286 - telegram.bot - DEBUG - Entering: delete_webhook
+2018-06-18 15:22:06,286 - telegram.vendor.ptb_urllib3.urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.telegram.org
+2018-06-18 15:22:06,287 - telegram.ext.dispatcher - DEBUG - Dispatcher started
+2018-06-18 15:22:06,548 - telegram.vendor.ptb_urllib3.urllib3.connectionpool - DEBUG - https://api.telegram.org:443 "POST /bot615630728:AAHu05nS8Ce4NnlGFxv1pwG7cGndF4HPhM8/deleteWebhook HTTP/1.1" 200 68
+2018-06-18 15:22:06,550 - telegram.bot - DEBUG - True
+2018-06-18 15:22:06,550 - telegram.bot - DEBUG - Exiting: delete_webhook
+2018-06-18 15:22:06,551 - telegram.ext.updater - DEBUG - Bootstrap done
+2018-06-18 15:22:06,551 - telegram.ext.updater - DEBUG - Start network loop retry getting Updates
+2018-06-18 15:22:06,551 - telegram.bot - DEBUG - Entering: get_updates
+2018-06-18 15:22:06,613 - telegram.vendor.ptb_urllib3.urllib3.connectionpool - DEBUG - https://api.telegram.org:443 "POST /bot615630728:AAHu05nS8Ce4NnlGFxv1pwG7cGndF4HPhM8/getUpdates HTTP/1.1" 200 2206
+2018-06-18 15:22:06,614 - telegram.bot - DEBUG - Getting updates: [960367598, 960367599, 960367600, 960367601, 960367602, 960367603]
+2018-06-18 15:22:06,616 - telegram.bot - DEBUG - [<telegram.update.Update object at 0x7fc7a9f4c710>, <telegram.update.Update object at 0x7fc7a9f4c828>, <telegram.update.Update object at 0x7fc7a9f4c940>, <telegram.update.Update object at 0x7fc7a9f4cb00>, <telegram.update.Update object at 0x7fc7a9f4ccf8>, <telegram.update.Update object at 0x7fc7a9f4cef0>]
+2018-06-18 15:22:06,617 - telegram.bot - DEBUG - Exiting: get_updates
+2018-06-18 15:22:06,617 - telegram.bot - DEBUG - Entering: get_updates
+2018-06-18 15:22:06,619 - telegram.ext.dispatcher - DEBUG - Processing Update: {'update_id': 960367598, 'message': {'message_id': 4, 'date': 1529313572, 'chat': {'id': 543387116, 'type': 'private', 'username': 'oveeen', 'first_name': 'Anya', 'last_name': 'Nya'}, 'text': '/start', 'entities': [{'type': 'bot_command', 'offset': 0, 'length': 6}], 'caption_entities': [], 'photo': [], 'new_chat_members': [], 'new_chat_photo': [], 'delete_chat_photo': False, 'group_chat_created': False, 'supergroup_chat_created': False, 'channel_chat_created': False, 'from': {'id': 543387116, 'first_name': 'Anya', 'is_bot': False, 'last_name': 'Nya', 'username': 'oveeen', 'language_code': 'en-US'}}}
+2018-06-18 15:22:06,622 - telegram.bot - DEBUG - Entering: get_me
+2018-06-18 15:22:06,623 - telegram.vendor.ptb_urllib3.urllib3.connectionpool - DEBUG - Starting new HTTPS connection (2): api.telegram.org
+2018-06-18 15:22:06,881 - telegram.vendor.ptb_urllib3.urllib3.connectionpool - DEBUG - https://api.telegram.org:443 "GET /bot615630728:AAHu05nS8Ce4NnlGFxv1pwG7cGndF4HPhM8/getMe HTTP/1.1" 200 99
+2018-06-18 15:22:06,883 - telegram.bot - DEBUG - {'id': 615630728, 'first_name': 'ltrtest', 'is_bot': True, 'username': 'ltrtest_bot'}
+2018-06-18 15:22:06,883 - telegram.bot - DEBUG - Exiting: get_me
+2018-06-18 15:22:06,883 - telegram.bot - DEBUG - Entering: send_message
+2018-06-18 15:22:06,970 - telegram.vendor.ptb_urllib3.urllib3.connectionpool - DEBUG - https://api.telegram.org:443 "POST /bot615630728:AAHu05nS8Ce4NnlGFxv1pwG7cGndF4HPhM8/sendMessage HTTP/1.1" 200 261
+2018-06-18 15:22:06,972 - telegram.bot - DEBUG - {'message_id': 10, 'date': 1529324526, 'chat': {'id': 543387116, 'type': 'private', 'username': 'oveeen', 'first_name': 'Anya', 'last_name': 'Nya'}, 'text': 'Hi oveeen!', 'entities': [], 'caption_entities': [], 'photo': [], 'new_chat_members': [], 'new_chat_photo': [], 'delete_chat_photo': False, 'group_chat_created': False, 'supergroup_chat_created': False, 'channel_chat_created': False, 'from': {'id': 615630728, 'first_name': 'ltrtest', 'is_bot': True, 'username': 'ltrtest_bot'}}
+2018-06-18 15:22:06,972 - telegram.bot - DEBUG - Exiting: send_message
+2018-06-18 15:22:06,973 - __main__ - DEBUG - /start
+2018-06-18 15:22:06,973 - telegram.ext.dispatcher - DEBUG - Processing Update: {'update_id': 960367599, 'message': {'message_id': 5, 'date': 1529313918, 'chat': {'id': 543387116, 'type': 'private', 'username': 'oveeen', 'first_name': 'Anya', 'last_name': 'Nya'}, 'text': '/start', 'entities': [{'type': 'bot_command', 'offset': 0, 'length': 6}], 'caption_entities': [], 'photo': [], 'new_chat_members': [], 'new_chat_photo': [], 'delete_chat_photo': False, 'group_chat_created': False, 'supergroup_chat_created': False, 'channel_chat_created': False, 'from': {'id': 543387116, 'first_name': 'Anya', 'is_bot': False, 'last_name': 'Nya', 'username': 'oveeen', 'language_code': 'en-US'}}}
+2018-06-18 15:22:06,974 - telegram.bot - DEBUG - Entering: send_message
+2018-06-18 15:22:07,088 - telegram.vendor.ptb_urllib3.urllib3.connectionpool - DEBUG - https://api.telegram.org:443 "POST /bot615630728:AAHu05nS8Ce4NnlGFxv1pwG7cGndF4HPhM8/sendMessage HTTP/1.1" 200 261
+2018-06-18 15:22:07,089 - telegram.bot - DEBUG - {'message_id': 11, 'date': 1529324527, 'chat': {'id': 543387116, 'type': 'private', 'username': 'oveeen', 'first_name': 'Anya', 'last_name': 'Nya'}, 'text': 'Hi oveeen!', 'entities': [], 'caption_entities': [], 'photo': [], 'new_chat_members': [], 'new_chat_photo': [], 'delete_chat_photo': False, 'group_chat_created': False, 'supergroup_chat_created': False, 'channel_chat_created': False, 'from': {'id': 615630728, 'first_name': 'ltrtest', 'is_bot': True, 'username': 'ltrtest_bot'}}
+2018-06-18 15:22:07,089 - telegram.bot - DEBUG - Exiting: send_message
+2018-06-18 15:22:07,089 - __main__ - DEBUG - /start
+2018-06-18 15:22:07,090 - telegram.ext.dispatcher - DEBUG - Processing Update: {'update_id': 960367600, 'message': {'message_id': 6, 'date': 1529314059, 'chat': {'id': 543387116, 'type': 'private', 'username': 'oveeen', 'first_name': 'Anya', 'last_name': 'Nya'}, 'text': '/start', 'entities': [{'type': 'bot_command', 'offset': 0, 'length': 6}], 'caption_entities': [], 'photo': [], 'new_chat_members': [], 'new_chat_photo': [], 'delete_chat_photo': False, 'group_chat_created': False, 'supergroup_chat_created': False, 'channel_chat_created': False, 'from': {'id': 543387116, 'first_name': 'Anya', 'is_bot': False, 'last_name': 'Nya', 'username': 'oveeen', 'language_code': 'en-US'}}}
+2018-06-18 15:22:07,090 - telegram.bot - DEBUG - Entering: send_message
+2018-06-18 15:22:07,180 - telegram.vendor.ptb_urllib3.urllib3.connectionpool - DEBUG - https://api.telegram.org:443 "POST /bot615630728:AAHu05nS8Ce4NnlGFxv1pwG7cGndF4HPhM8/sendMessage HTTP/1.1" 200 261
+2018-06-18 15:22:07,181 - telegram.bot - DEBUG - {'message_id': 12, 'date': 1529324527, 'chat': {'id': 543387116, 'type': 'private', 'username': 'oveeen', 'first_name': 'Anya', 'last_name': 'Nya'}, 'text': 'Hi oveeen!', 'entities': [], 'caption_entities': [], 'photo': [], 'new_chat_members': [], 'new_chat_photo': [], 'delete_chat_photo': False, 'group_chat_created': False, 'supergroup_chat_created': False, 'channel_chat_created': False, 'from': {'id': 615630728, 'first_name': 'ltrtest', 'is_bot': True, 'username': 'ltrtest_bot'}}
+2018-06-18 15:22:07,181 - telegram.bot - DEBUG - Exiting: send_message
+2018-06-18 15:22:07,181 - __main__ - DEBUG - /start
+2018-06-18 15:22:07,181 - telegram.ext.dispatcher - DEBUG - Processing Update: {'update_id': 960367601, 'message': {'message_id': 7, 'date': 1529314207, 'chat': {'id': 543387116, 'type': 'private', 'username': 'oveeen', 'first_name': 'Anya', 'last_name': 'Nya'}, 'text': '/start', 'entities': [{'type': 'bot_command', 'offset': 0, 'length': 6}], 'caption_entities': [], 'photo': [], 'new_chat_members': [], 'new_chat_photo': [], 'delete_chat_photo': False, 'group_chat_created': False, 'supergroup_chat_created': False, 'channel_chat_created': False, 'from': {'id': 543387116, 'first_name': 'Anya', 'is_bot': False, 'last_name': 'Nya', 'username': 'oveeen', 'language_code': 'en-US'}}}
+2018-06-18 15:22:07,182 - telegram.bot - DEBUG - Entering: send_message
+2018-06-18 15:22:07,257 - telegram.vendor.ptb_urllib3.urllib3.connectionpool - DEBUG - https://api.telegram.org:443 "POST /bot615630728:AAHu05nS8Ce4NnlGFxv1pwG7cGndF4HPhM8/sendMessage HTTP/1.1" 200 261
+2018-06-18 15:22:07,258 - telegram.bot - DEBUG - {'message_id': 13, 'date': 1529324527, 'chat': {'id': 543387116, 'type': 'private', 'username': 'oveeen', 'first_name': 'Anya', 'last_name': 'Nya'}, 'text': 'Hi oveeen!', 'entities': [], 'caption_entities': [], 'photo': [], 'new_chat_members': [], 'new_chat_photo': [], 'delete_chat_photo': False, 'group_chat_created': False, 'supergroup_chat_created': False, 'channel_chat_created': False, 'from': {'id': 615630728, 'first_name': 'ltrtest', 'is_bot': True, 'username': 'ltrtest_bot'}}
+2018-06-18 15:22:07,258 - telegram.bot - DEBUG - Exiting: send_message
+2018-06-18 15:22:07,258 - __main__ - DEBUG - /start
+2018-06-18 15:22:07,258 - telegram.ext.dispatcher - DEBUG - Processing Update: {'update_id': 960367602, 'message': {'message_id': 8, 'date': 1529321158, 'chat': {'id': 543387116, 'type': 'private', 'username': 'oveeen', 'first_name': 'Anya', 'last_name': 'Nya'}, 'text': '/start', 'entities': [{'type': 'bot_command', 'offset': 0, 'length': 6}], 'caption_entities': [], 'photo': [], 'new_chat_members': [], 'new_chat_photo': [], 'delete_chat_photo': False, 'group_chat_created': False, 'supergroup_chat_created': False, 'channel_chat_created': False, 'from': {'id': 543387116, 'first_name': 'Anya', 'is_bot': False, 'last_name': 'Nya', 'username': 'oveeen', 'language_code': 'en-US'}}}
+2018-06-18 15:22:07,259 - telegram.bot - DEBUG - Entering: send_message
+2018-06-18 15:22:07,340 - telegram.vendor.ptb_urllib3.urllib3.connectionpool - DEBUG - https://api.telegram.org:443 "POST /bot615630728:AAHu05nS8Ce4NnlGFxv1pwG7cGndF4HPhM8/sendMessage HTTP/1.1" 200 261
+2018-06-18 15:22:07,341 - telegram.bot - DEBUG - {'message_id': 14, 'date': 1529324527, 'chat': {'id': 543387116, 'type': 'private', 'username': 'oveeen', 'first_name': 'Anya', 'last_name': 'Nya'}, 'text': 'Hi oveeen!', 'entities': [], 'caption_entities': [], 'photo': [], 'new_chat_members': [], 'new_chat_photo': [], 'delete_chat_photo': False, 'group_chat_created': False, 'supergroup_chat_created': False, 'channel_chat_created': False, 'from': {'id': 615630728, 'first_name': 'ltrtest', 'is_bot': True, 'username': 'ltrtest_bot'}}
+2018-06-18 15:22:07,342 - telegram.bot - DEBUG - Exiting: send_message
+2018-06-18 15:22:07,342 - __main__ - DEBUG - /start
+2018-06-18 15:22:07,343 - telegram.ext.dispatcher - DEBUG - Processing Update: {'update_id': 960367603, 'message': {'message_id': 9, 'date': 1529323584, 'chat': {'id': 543387116, 'type': 'private', 'username': 'oveeen', 'first_name': 'Anya', 'last_name': 'Nya'}, 'text': '/start', 'entities': [{'type': 'bot_command', 'offset': 0, 'length': 6}], 'caption_entities': [], 'photo': [], 'new_chat_members': [], 'new_chat_photo': [], 'delete_chat_photo': False, 'group_chat_created': False, 'supergroup_chat_created': False, 'channel_chat_created': False, 'from': {'id': 543387116, 'first_name': 'Anya', 'is_bot': False, 'last_name': 'Nya', 'username': 'oveeen', 'language_code': 'en-US'}}}
+2018-06-18 15:22:07,344 - telegram.bot - DEBUG - Entering: send_message
+2018-06-18 15:22:07,421 - telegram.vendor.ptb_urllib3.urllib3.connectionpool - DEBUG - https://api.telegram.org:443 "POST /bot615630728:AAHu05nS8Ce4NnlGFxv1pwG7cGndF4HPhM8/sendMessage HTTP/1.1" 200 261
+2018-06-18 15:22:07,422 - telegram.bot - DEBUG - {'message_id': 15, 'date': 1529324527, 'chat': {'id': 543387116, 'type': 'private', 'username': 'oveeen', 'first_name': 'Anya', 'last_name': 'Nya'}, 'text': 'Hi oveeen!', 'entities': [], 'caption_entities': [], 'photo': [], 'new_chat_members': [], 'new_chat_photo': [], 'delete_chat_photo': False, 'group_chat_created': False, 'supergroup_chat_created': False, 'channel_chat_created': False, 'from': {'id': 615630728, 'first_name': 'ltrtest', 'is_bot': True, 'username': 'ltrtest_bot'}}
+2018-06-18 15:22:07,422 - telegram.bot - DEBUG - Exiting: send_message
+2018-06-18 15:22:07,422 - __main__ - DEBUG - /start
+2018-06-18 15:22:16,680 - telegram.vendor.ptb_urllib3.urllib3.connectionpool - DEBUG - https://api.telegram.org:443 "POST /bot615630728:AAHu05nS8Ce4NnlGFxv1pwG7cGndF4HPhM8/getUpdates HTTP/1.1" 200 23
+2018-06-18 15:22:16,682 - telegram.bot - DEBUG - No new updates found.
+2018-06-18 15:22:16,682 - telegram.bot - DEBUG - []
+2018-06-18 15:22:16,682 - telegram.bot - DEBUG - Exiting: get_updates
+2018-06-18 15:22:16,683 - telegram.bot - DEBUG - Entering: get_updates
+2018-06-18 15:22:26,743 - telegram.vendor.ptb_urllib3.urllib3.connectionpool - DEBUG - https://api.telegram.org:443 "POST /bot615630728:AAHu05nS8Ce4NnlGFxv1pwG7cGndF4HPhM8/getUpdates HTTP/1.1" 200 23
+2018-06-18 15:22:26,744 - telegram.bot - DEBUG - No new updates found.
+2018-06-18 15:22:26,744 - telegram.bot - DEBUG - []
+2018-06-18 15:22:26,744 - telegram.bot - DEBUG - Exiting: get_updates
+2018-06-18 15:22:26,744 - telegram.bot - DEBUG - Entering: get_updates
+2018-06-18 15:22:36,804 - telegram.vendor.ptb_urllib3.urllib3.connectionpool - DEBUG - https://api.telegram.org:443 "POST /bot615630728:AAHu05nS8Ce4NnlGFxv1pwG7cGndF4HPhM8/getUpdates HTTP/1.1" 200 23
+2018-06-18 15:22:36,805 - telegram.bot - DEBUG - No new updates found.
+2018-06-18 15:22:36,805 - telegram.bot - DEBUG - []
+2018-06-18 15:22:36,805 - telegram.bot - DEBUG - Exiting: get_updates
+2018-06-18 15:22:36,806 - telegram.bot - DEBUG - Entering: get_updates
+2018-06-18 15:22:46,871 - telegram.vendor.ptb_urllib3.urllib3.connectionpool - DEBUG - https://api.telegram.org:443 "POST /bot615630728:AAHu05nS8Ce4NnlGFxv1pwG7cGndF4HPhM8/getUpdates HTTP/1.1" 200 23
+2018-06-18 15:22:46,872 - telegram.bot - DEBUG - No new updates found.
+2018-06-18 15:22:46,872 - telegram.bot - DEBUG - []
+2018-06-18 15:22:46,872 - telegram.bot - DEBUG - Exiting: get_updates
+2018-06-18 15:22:46,873 - telegram.bot - DEBUG - Entering: get_updates
+2018-06-18 15:22:56,933 - telegram.vendor.ptb_urllib3.urllib3.connectionpool - DEBUG - https://api.telegram.org:443 "POST /bot615630728:AAHu05nS8Ce4NnlGFxv1pwG7cGndF4HPhM8/getUpdates HTTP/1.1" 200 23
+2018-06-18 15:22:56,934 - telegram.bot - DEBUG - No new updates found.
+2018-06-18 15:22:56,935 - telegram.bot - DEBUG - []
+2018-06-18 15:22:56,935 - telegram.bot - DEBUG - Exiting: get_updates
+2018-06-18 15:22:56,935 - telegram.bot - DEBUG - Entering: get_updates
+2018-06-18 15:23:06,995 - telegram.vendor.ptb_urllib3.urllib3.connectionpool - DEBUG - https://api.telegram.org:443 "POST /bot615630728:AAHu05nS8Ce4NnlGFxv1pwG7cGndF4HPhM8/getUpdates HTTP/1.1" 200 23
+2018-06-18 15:23:06,996 - telegram.bot - DEBUG - No new updates found.
+2018-06-18 15:23:06,997 - telegram.bot - DEBUG - []
+2018-06-18 15:23:06,997 - telegram.bot - DEBUG - Exiting: get_updates
+2018-06-18 15:23:06,997 - telegram.bot - DEBUG - Entering: get_updates
+2018-06-18 15:23:17,058 - telegram.vendor.ptb_urllib3.urllib3.connectionpool - DEBUG - https://api.telegram.org:443 "POST /bot615630728:AAHu05nS8Ce4NnlGFxv1pwG7cGndF4HPhM8/getUpdates HTTP/1.1" 200 23
+2018-06-18 15:23:17,059 - telegram.bot - DEBUG - No new updates found.
+2018-06-18 15:23:17,060 - telegram.bot - DEBUG - []
+2018-06-18 15:23:17,060 - telegram.bot - DEBUG - Exiting: get_updates
+2018-06-18 15:23:17,060 - telegram.bot - DEBUG - Entering: get_updates
+2018-06-18 15:23:27,122 - telegram.vendor.ptb_urllib3.urllib3.connectionpool - DEBUG - https://api.telegram.org:443 "POST /bot615630728:AAHu05nS8Ce4NnlGFxv1pwG7cGndF4HPhM8/getUpdates HTTP/1.1" 200 23
+2018-06-18 15:23:27,123 - telegram.bot - DEBUG - No new updates found.
+2018-06-18 15:23:27,124 - telegram.bot - DEBUG - []
+2018-06-18 15:23:27,124 - telegram.bot - DEBUG - Exiting: get_updates
+2018-06-18 15:23:27,124 - telegram.bot - DEBUG - Entering: get_updates
+2018-06-18 15:23:37,185 - telegram.vendor.ptb_urllib3.urllib3.connectionpool - DEBUG - https://api.telegram.org:443 "POST /bot615630728:AAHu05nS8Ce4NnlGFxv1pwG7cGndF4HPhM8/getUpdates HTTP/1.1" 200 23
+2018-06-18 15:23:37,186 - telegram.bot - DEBUG - No new updates found.
+2018-06-18 15:23:37,186 - telegram.bot - DEBUG - []
+2018-06-18 15:23:37,186 - telegram.bot - DEBUG - Exiting: get_updates
+2018-06-18 15:23:37,187 - telegram.bot - DEBUG - Entering: get_updates
+2018-06-18 15:23:47,248 - telegram.vendor.ptb_urllib3.urllib3.connectionpool - DEBUG - https://api.telegram.org:443 "POST /bot615630728:AAHu05nS8Ce4NnlGFxv1pwG7cGndF4HPhM8/getUpdates HTTP/1.1" 200 23
+2018-06-18 15:23:47,249 - telegram.bot - DEBUG - No new updates found.
+2018-06-18 15:23:47,250 - telegram.bot - DEBUG - []
+2018-06-18 15:23:47,250 - telegram.bot - DEBUG - Exiting: get_updates
+2018-06-18 15:23:47,251 - telegram.bot - DEBUG - Entering: get_updates
+2018-06-18 15:23:57,312 - telegram.vendor.ptb_urllib3.urllib3.connectionpool - DEBUG - https://api.telegram.org:443 "POST /bot615630728:AAHu05nS8Ce4NnlGFxv1pwG7cGndF4HPhM8/getUpdates HTTP/1.1" 200 23
+2018-06-18 15:23:57,313 - telegram.bot - DEBUG - No new updates found.
+2018-06-18 15:23:57,314 - telegram.bot - DEBUG - []
+2018-06-18 15:23:57,314 - telegram.bot - DEBUG - Exiting: get_updates
+2018-06-18 15:23:57,315 - telegram.bot - DEBUG - Entering: get_updates
+2018-06-18 15:24:07,375 - telegram.vendor.ptb_urllib3.urllib3.connectionpool - DEBUG - https://api.telegram.org:443 "POST /bot615630728:AAHu05nS8Ce4NnlGFxv1pwG7cGndF4HPhM8/getUpdates HTTP/1.1" 200 23
+2018-06-18 15:24:07,375 - telegram.bot - DEBUG - No new updates found.
+2018-06-18 15:24:07,375 - telegram.bot - DEBUG - []
+2018-06-18 15:24:07,376 - telegram.bot - DEBUG - Exiting: get_updates
+2018-06-18 15:24:07,376 - telegram.bot - DEBUG - Entering: get_updates
+2018-06-18 15:24:08,066 - telegram.vendor.ptb_urllib3.urllib3.connectionpool - DEBUG - https://api.telegram.org:443 "POST /bot615630728:AAHu05nS8Ce4NnlGFxv1pwG7cGndF4HPhM8/getUpdates HTTP/1.1" 200 326
+2018-06-18 15:24:08,067 - telegram.bot - DEBUG - Getting updates: [960367604]
+2018-06-18 15:24:08,067 - telegram.bot - DEBUG - [<telegram.update.Update object at 0x7fc7a9f4c160>]
+2018-06-18 15:24:08,067 - telegram.bot - DEBUG - Exiting: get_updates
+2018-06-18 15:24:08,067 - telegram.bot - DEBUG - Entering: get_updates
+2018-06-18 15:24:08,067 - telegram.ext.dispatcher - DEBUG - Processing Update: {'update_id': 960367604, 'message': {'message_id': 16, 'date': 1529324648, 'chat': {'id': 543387116, 'type': 'private', 'username': 'oveeen', 'first_name': 'Anya', 'last_name': 'Nya'}, 'text': 'nya', 'entities': [], 'caption_entities': [], 'photo': [], 'new_chat_members': [], 'new_chat_photo': [], 'delete_chat_photo': False, 'group_chat_created': False, 'supergroup_chat_created': False, 'channel_chat_created': False, 'from': {'id': 543387116, 'first_name': 'Anya', 'is_bot': False, 'last_name': 'Nya', 'username': 'oveeen', 'language_code': 'en-US'}}}
+2018-06-18 15:24:08,067 - telegram.bot - DEBUG - Entering: send_message
+2018-06-18 15:24:08,148 - telegram.vendor.ptb_urllib3.urllib3.connectionpool - DEBUG - https://api.telegram.org:443 "POST /bot615630728:AAHu05nS8Ce4NnlGFxv1pwG7cGndF4HPhM8/sendMessage HTTP/1.1" 200 254
+2018-06-18 15:24:08,149 - telegram.bot - DEBUG - {'message_id': 17, 'date': 1529324648, 'chat': {'id': 543387116, 'type': 'private', 'username': 'oveeen', 'first_name': 'Anya', 'last_name': 'Nya'}, 'text': 'nya', 'entities': [], 'caption_entities': [], 'photo': [], 'new_chat_members': [], 'new_chat_photo': [], 'delete_chat_photo': False, 'group_chat_created': False, 'supergroup_chat_created': False, 'channel_chat_created': False, 'from': {'id': 615630728, 'first_name': 'ltrtest', 'is_bot': True, 'username': 'ltrtest_bot'}}
+2018-06-18 15:24:08,150 - telegram.bot - DEBUG - Exiting: send_message
+2018-06-18 15:24:08,150 - __main__ - DEBUG - /echo
+2018-06-18 15:24:12,956 - telegram.vendor.ptb_urllib3.urllib3.connectionpool - DEBUG - https://api.telegram.org:443 "POST /bot615630728:AAHu05nS8Ce4NnlGFxv1pwG7cGndF4HPhM8/getUpdates HTTP/1.1" 200 324
+2018-06-18 15:24:12,957 - telegram.bot - DEBUG - Getting updates: [960367605]
+2018-06-18 15:24:12,957 - telegram.bot - DEBUG - [<telegram.update.Update object at 0x7fc7a9f4c278>]
+2018-06-18 15:24:12,957 - telegram.bot - DEBUG - Exiting: get_updates
+2018-06-18 15:24:12,957 - telegram.bot - DEBUG - Entering: get_updates
+2018-06-18 15:24:12,957 - telegram.ext.dispatcher - DEBUG - Processing Update: {'update_id': 960367605, 'message': {'message_id': 18, 'date': 1529324652, 'chat': {'id': 543387116, 'type': 'private', 'username': 'oveeen', 'first_name': 'Anya', 'last_name': 'Nya'}, 'text': 'h', 'entities': [], 'caption_entities': [], 'photo': [], 'new_chat_members': [], 'new_chat_photo': [], 'delete_chat_photo': False, 'group_chat_created': False, 'supergroup_chat_created': False, 'channel_chat_created': False, 'from': {'id': 543387116, 'first_name': 'Anya', 'is_bot': False, 'last_name': 'Nya', 'username': 'oveeen', 'language_code': 'en-US'}}}
+2018-06-18 15:24:12,958 - telegram.bot - DEBUG - Entering: send_message
+2018-06-18 15:24:13,042 - telegram.vendor.ptb_urllib3.urllib3.connectionpool - DEBUG - https://api.telegram.org:443 "POST /bot615630728:AAHu05nS8Ce4NnlGFxv1pwG7cGndF4HPhM8/sendMessage HTTP/1.1" 200 252
+2018-06-18 15:24:13,042 - telegram.bot - DEBUG - {'message_id': 19, 'date': 1529324652, 'chat': {'id': 543387116, 'type': 'private', 'username': 'oveeen', 'first_name': 'Anya', 'last_name': 'Nya'}, 'text': 'h', 'entities': [], 'caption_entities': [], 'photo': [], 'new_chat_members': [], 'new_chat_photo': [], 'delete_chat_photo': False, 'group_chat_created': False, 'supergroup_chat_created': False, 'channel_chat_created': False, 'from': {'id': 615630728, 'first_name': 'ltrtest', 'is_bot': True, 'username': 'ltrtest_bot'}}
+2018-06-18 15:24:13,042 - telegram.bot - DEBUG - Exiting: send_message
+2018-06-18 15:24:13,042 - __main__ - DEBUG - /echo
+2018-06-18 15:24:23,017 - telegram.vendor.ptb_urllib3.urllib3.connectionpool - DEBUG - https://api.telegram.org:443 "POST /bot615630728:AAHu05nS8Ce4NnlGFxv1pwG7cGndF4HPhM8/getUpdates HTTP/1.1" 200 23
+2018-06-18 15:24:23,018 - telegram.bot - DEBUG - No new updates found.
+2018-06-18 15:24:23,018 - telegram.bot - DEBUG - []
+2018-06-18 15:24:23,018 - telegram.bot - DEBUG - Exiting: get_updates
+2018-06-18 15:24:23,018 - telegram.bot - DEBUG - Entering: get_updates
+2018-06-18 15:24:33,078 - telegram.vendor.ptb_urllib3.urllib3.connectionpool - DEBUG - https://api.telegram.org:443 "POST /bot615630728:AAHu05nS8Ce4NnlGFxv1pwG7cGndF4HPhM8/getUpdates HTTP/1.1" 200 23
+2018-06-18 15:24:33,078 - telegram.bot - DEBUG - No new updates found.
+2018-06-18 15:24:33,078 - telegram.bot - DEBUG - []
+2018-06-18 15:24:33,078 - telegram.bot - DEBUG - Exiting: get_updates
+2018-06-18 15:24:33,078 - telegram.bot - DEBUG - Entering: get_updates
+2018-06-18 15:24:43,138 - telegram.vendor.ptb_urllib3.urllib3.connectionpool - DEBUG - https://api.telegram.org:443 "POST /bot615630728:AAHu05nS8Ce4NnlGFxv1pwG7cGndF4HPhM8/getUpdates HTTP/1.1" 200 23
+2018-06-18 15:24:43,140 - telegram.bot - DEBUG - No new updates found.
+2018-06-18 15:24:43,140 - telegram.bot - DEBUG - []
+2018-06-18 15:24:43,140 - telegram.bot - DEBUG - Exiting: get_updates
+2018-06-18 15:24:43,140 - telegram.bot - DEBUG - Entering: get_updates
+2018-06-18 15:24:53,201 - telegram.vendor.ptb_urllib3.urllib3.connectionpool - DEBUG - https://api.telegram.org:443 "POST /bot615630728:AAHu05nS8Ce4NnlGFxv1pwG7cGndF4HPhM8/getUpdates HTTP/1.1" 200 23
+2018-06-18 15:24:53,202 - telegram.bot - DEBUG - No new updates found.
+2018-06-18 15:24:53,202 - telegram.bot - DEBUG - []
+2018-06-18 15:24:53,203 - telegram.bot - DEBUG - Exiting: get_updates
+2018-06-18 15:24:53,203 - telegram.bot - DEBUG - Entering: get_updates
+2018-06-18 15:25:03,263 - telegram.vendor.ptb_urllib3.urllib3.connectionpool - DEBUG - https://api.telegram.org:443 "POST /bot615630728:AAHu05nS8Ce4NnlGFxv1pwG7cGndF4HPhM8/getUpdates HTTP/1.1" 200 23
+2018-06-18 15:25:03,264 - telegram.bot - DEBUG - No new updates found.
+2018-06-18 15:25:03,265 - telegram.bot - DEBUG - []
+2018-06-18 15:25:03,265 - telegram.bot - DEBUG - Exiting: get_updates
+2018-06-18 15:25:03,265 - telegram.bot - DEBUG - Entering: get_updates
+2018-06-18 15:25:13,325 - telegram.vendor.ptb_urllib3.urllib3.connectionpool - DEBUG - https://api.telegram.org:443 "POST /bot615630728:AAHu05nS8Ce4NnlGFxv1pwG7cGndF4HPhM8/getUpdates HTTP/1.1" 200 23
+2018-06-18 15:25:13,327 - telegram.bot - DEBUG - No new updates found.
+2018-06-18 15:25:13,327 - telegram.bot - DEBUG - []
+2018-06-18 15:25:13,327 - telegram.bot - DEBUG - Exiting: get_updates
+2018-06-18 15:25:13,328 - telegram.bot - DEBUG - Entering: get_updates
+2018-06-18 15:25:23,390 - telegram.vendor.ptb_urllib3.urllib3.connectionpool - DEBUG - https://api.telegram.org:443 "POST /bot615630728:AAHu05nS8Ce4NnlGFxv1pwG7cGndF4HPhM8/getUpdates HTTP/1.1" 200 23
+2018-06-18 15:25:23,391 - telegram.bot - DEBUG - No new updates found.
+2018-06-18 15:25:23,391 - telegram.bot - DEBUG - []
+2018-06-18 15:25:23,392 - telegram.bot - DEBUG - Exiting: get_updates
+2018-06-18 15:25:23,392 - telegram.bot - DEBUG - Entering: get_updates
+2018-06-18 15:25:33,453 - telegram.vendor.ptb_urllib3.urllib3.connectionpool - DEBUG - https://api.telegram.org:443 "POST /bot615630728:AAHu05nS8Ce4NnlGFxv1pwG7cGndF4HPhM8/getUpdates HTTP/1.1" 200 23
+2018-06-18 15:25:33,454 - telegram.bot - DEBUG - No new updates found.
+2018-06-18 15:25:33,454 - telegram.bot - DEBUG - []
+2018-06-18 15:25:33,455 - telegram.bot - DEBUG - Exiting: get_updates
+2018-06-18 15:25:33,455 - telegram.bot - DEBUG - Entering: get_updates
+2018-06-18 15:25:43,518 - telegram.vendor.ptb_urllib3.urllib3.connectionpool - DEBUG - https://api.telegram.org:443 "POST /bot615630728:AAHu05nS8Ce4NnlGFxv1pwG7cGndF4HPhM8/getUpdates HTTP/1.1" 200 23
+2018-06-18 15:25:43,519 - telegram.bot - DEBUG - No new updates found.
+2018-06-18 15:25:43,519 - telegram.bot - DEBUG - []
+2018-06-18 15:25:43,520 - telegram.bot - DEBUG - Exiting: get_updates
+2018-06-18 15:25:43,520 - telegram.bot - DEBUG - Entering: get_updates
+2018-06-18 15:25:53,581 - telegram.vendor.ptb_urllib3.urllib3.connectionpool - DEBUG - https://api.telegram.org:443 "POST /bot615630728:AAHu05nS8Ce4NnlGFxv1pwG7cGndF4HPhM8/getUpdates HTTP/1.1" 200 23
+2018-06-18 15:25:53,582 - telegram.bot - DEBUG - No new updates found.
+2018-06-18 15:25:53,582 - telegram.bot - DEBUG - []
+2018-06-18 15:25:53,582 - telegram.bot - DEBUG - Exiting: get_updates
+2018-06-18 15:25:53,582 - telegram.bot - DEBUG - Entering: get_updates
+2018-06-18 15:26:03,643 - telegram.vendor.ptb_urllib3.urllib3.connectionpool - DEBUG - https://api.telegram.org:443 "POST /bot615630728:AAHu05nS8Ce4NnlGFxv1pwG7cGndF4HPhM8/getUpdates HTTP/1.1" 200 23
+2018-06-18 15:26:03,644 - telegram.bot - DEBUG - No new updates found.
+2018-06-18 15:26:03,644 - telegram.bot - DEBUG - []
+2018-06-18 15:26:03,644 - telegram.bot - DEBUG - Exiting: get_updates
+2018-06-18 15:26:03,645 - telegram.bot - DEBUG - Entering: get_updates
+2018-06-18 15:26:13,705 - telegram.vendor.ptb_urllib3.urllib3.connectionpool - DEBUG - https://api.telegram.org:443 "POST /bot615630728:AAHu05nS8Ce4NnlGFxv1pwG7cGndF4HPhM8/getUpdates HTTP/1.1" 200 23
+2018-06-18 15:26:13,706 - telegram.bot - DEBUG - No new updates found.
+2018-06-18 15:26:13,707 - telegram.bot - DEBUG - []
+2018-06-18 15:26:13,707 - telegram.bot - DEBUG - Exiting: get_updates
+2018-06-18 15:26:13,707 - telegram.bot - DEBUG - Entering: get_updates
+2018-06-18 15:26:23,768 - telegram.vendor.ptb_urllib3.urllib3.connectionpool - DEBUG - https://api.telegram.org:443 "POST /bot615630728:AAHu05nS8Ce4NnlGFxv1pwG7cGndF4HPhM8/getUpdates HTTP/1.1" 200 23
+2018-06-18 15:26:23,770 - telegram.bot - DEBUG - No new updates found.
+2018-06-18 15:26:23,770 - telegram.bot - DEBUG - []
+2018-06-18 15:26:23,770 - telegram.bot - DEBUG - Exiting: get_updates
+2018-06-18 15:26:23,771 - telegram.bot - DEBUG - Entering: get_updates
+2018-06-18 15:26:33,851 - telegram.vendor.ptb_urllib3.urllib3.connectionpool - DEBUG - https://api.telegram.org:443 "POST /bot615630728:AAHu05nS8Ce4NnlGFxv1pwG7cGndF4HPhM8/getUpdates HTTP/1.1" 200 23
+2018-06-18 15:26:33,852 - telegram.bot - DEBUG - No new updates found.
+2018-06-18 15:26:33,852 - telegram.bot - DEBUG - []
+2018-06-18 15:26:33,853 - telegram.bot - DEBUG - Exiting: get_updates
+2018-06-18 15:26:33,853 - telegram.bot - DEBUG - Entering: get_updates
+2018-06-18 15:26:43,914 - telegram.vendor.ptb_urllib3.urllib3.connectionpool - DEBUG - https://api.telegram.org:443 "POST /bot615630728:AAHu05nS8Ce4NnlGFxv1pwG7cGndF4HPhM8/getUpdates HTTP/1.1" 200 23
+2018-06-18 15:26:43,915 - telegram.bot - DEBUG - No new updates found.
+2018-06-18 15:26:43,916 - telegram.bot - DEBUG - []
+2018-06-18 15:26:43,916 - telegram.bot - DEBUG - Exiting: get_updates
+2018-06-18 15:26:43,916 - telegram.bot - DEBUG - Entering: get_updates
+2018-06-18 15:26:54,000 - telegram.vendor.ptb_urllib3.urllib3.connectionpool - DEBUG - https://api.telegram.org:443 "POST /bot615630728:AAHu05nS8Ce4NnlGFxv1pwG7cGndF4HPhM8/getUpdates HTTP/1.1" 200 23
+2018-06-18 15:26:54,001 - telegram.bot - DEBUG - No new updates found.
+2018-06-18 15:26:54,002 - telegram.bot - DEBUG - []
+2018-06-18 15:26:54,002 - telegram.bot - DEBUG - Exiting: get_updates
+2018-06-18 15:26:54,002 - telegram.bot - DEBUG - Entering: get_updates
+2018-06-18 15:27:04,612 - telegram.vendor.ptb_urllib3.urllib3.connectionpool - DEBUG - https://api.telegram.org:443 "POST /bot615630728:AAHu05nS8Ce4NnlGFxv1pwG7cGndF4HPhM8/getUpdates HTTP/1.1" 200 23
+2018-06-18 15:27:04,614 - telegram.bot - DEBUG - No new updates found.
+2018-06-18 15:27:04,614 - telegram.bot - DEBUG - []
+2018-06-18 15:27:04,614 - telegram.bot - DEBUG - Exiting: get_updates
+2018-06-18 15:27:04,615 - telegram.bot - DEBUG - Entering: get_updates
+2018-06-18 15:27:14,675 - telegram.vendor.ptb_urllib3.urllib3.connectionpool - DEBUG - https://api.telegram.org:443 "POST /bot615630728:AAHu05nS8Ce4NnlGFxv1pwG7cGndF4HPhM8/getUpdates HTTP/1.1" 200 23
+2018-06-18 15:27:14,676 - telegram.bot - DEBUG - No new updates found.
+2018-06-18 15:27:14,676 - telegram.bot - DEBUG - []
+2018-06-18 15:27:14,676 - telegram.bot - DEBUG - Exiting: get_updates
+2018-06-18 15:27:14,677 - telegram.bot - DEBUG - Entering: get_updates
+2018-06-18 15:27:24,860 - telegram.vendor.ptb_urllib3.urllib3.connectionpool - DEBUG - https://api.telegram.org:443 "POST /bot615630728:AAHu05nS8Ce4NnlGFxv1pwG7cGndF4HPhM8/getUpdates HTTP/1.1" 200 23
+2018-06-18 15:27:24,860 - telegram.bot - DEBUG - No new updates found.
+2018-06-18 15:27:24,860 - telegram.bot - DEBUG - []
+2018-06-18 15:27:24,860 - telegram.bot - DEBUG - Exiting: get_updates
+2018-06-18 15:27:24,860 - telegram.bot - DEBUG - Entering: get_updates
+2018-06-18 15:27:34,927 - telegram.vendor.ptb_urllib3.urllib3.connectionpool - DEBUG - https://api.telegram.org:443 "POST /bot615630728:AAHu05nS8Ce4NnlGFxv1pwG7cGndF4HPhM8/getUpdates HTTP/1.1" 200 23
+2018-06-18 15:27:34,929 - telegram.bot - DEBUG - No new updates found.
+2018-06-18 15:27:34,929 - telegram.bot - DEBUG - []
+2018-06-18 15:27:34,929 - telegram.bot - DEBUG - Exiting: get_updates
+2018-06-18 15:27:34,930 - telegram.bot - DEBUG - Entering: get_updates
+2018-06-18 15:27:44,991 - telegram.vendor.ptb_urllib3.urllib3.connectionpool - DEBUG - https://api.telegram.org:443 "POST /bot615630728:AAHu05nS8Ce4NnlGFxv1pwG7cGndF4HPhM8/getUpdates HTTP/1.1" 200 23
+2018-06-18 15:27:44,992 - telegram.bot - DEBUG - No new updates found.
+2018-06-18 15:27:44,992 - telegram.bot - DEBUG - []
+2018-06-18 15:27:44,993 - telegram.bot - DEBUG - Exiting: get_updates
+2018-06-18 15:27:44,993 - telegram.bot - DEBUG - Entering: get_updates
+2018-06-18 15:27:55,053 - telegram.vendor.ptb_urllib3.urllib3.connectionpool - DEBUG - https://api.telegram.org:443 "POST /bot615630728:AAHu05nS8Ce4NnlGFxv1pwG7cGndF4HPhM8/getUpdates HTTP/1.1" 200 23
+2018-06-18 15:27:55,054 - telegram.bot - DEBUG - No new updates found.
+2018-06-18 15:27:55,055 - telegram.bot - DEBUG - []
+2018-06-18 15:27:55,055 - telegram.bot - DEBUG - Exiting: get_updates
+2018-06-18 15:27:55,055 - telegram.bot - DEBUG - Entering: get_updates
+2018-06-18 15:28:05,116 - telegram.vendor.ptb_urllib3.urllib3.connectionpool - DEBUG - https://api.telegram.org:443 "POST /bot615630728:AAHu05nS8Ce4NnlGFxv1pwG7cGndF4HPhM8/getUpdates HTTP/1.1" 200 23
+2018-06-18 15:28:05,117 - telegram.bot - DEBUG - No new updates found.
+2018-06-18 15:28:05,117 - telegram.bot - DEBUG - []
+2018-06-18 15:28:05,117 - telegram.bot - DEBUG - Exiting: get_updates
+2018-06-18 15:28:05,117 - telegram.bot - DEBUG - Entering: get_updates
+2018-06-18 15:28:15,179 - telegram.vendor.ptb_urllib3.urllib3.connectionpool - DEBUG - https://api.telegram.org:443 "POST /bot615630728:AAHu05nS8Ce4NnlGFxv1pwG7cGndF4HPhM8/getUpdates HTTP/1.1" 200 23
+2018-06-18 15:28:15,180 - telegram.bot - DEBUG - No new updates found.
+2018-06-18 15:28:15,180 - telegram.bot - DEBUG - []
+2018-06-18 15:28:15,181 - telegram.bot - DEBUG - Exiting: get_updates
+2018-06-18 15:28:15,181 - telegram.bot - DEBUG - Entering: get_updates
+2018-06-18 15:28:24,350 - telegram.vendor.ptb_urllib3.urllib3.connectionpool - DEBUG - https://api.telegram.org:443 "POST /bot615630728:AAHu05nS8Ce4NnlGFxv1pwG7cGndF4HPhM8/getUpdates HTTP/1.1" 200 330
+2018-06-18 15:28:24,352 - telegram.bot - DEBUG - Getting updates: [960367606]
+2018-06-18 15:28:24,352 - telegram.bot - DEBUG - [<telegram.update.Update object at 0x7fc7a9f4c550>]
+2018-06-18 15:28:24,353 - telegram.bot - DEBUG - Exiting: get_updates
+2018-06-18 15:28:24,353 - telegram.bot - DEBUG - Entering: get_updates
+2018-06-18 15:28:24,354 - telegram.ext.dispatcher - DEBUG - Processing Update: {'update_id': 960367606, 'message': {'message_id': 20, 'date': 1529324903, 'chat': {'id': 543387116, 'type': 'private', 'username': 'oveeen', 'first_name': 'Anya', 'last_name': 'Nya'}, 'text': 'myaaaaa', 'entities': [], 'caption_entities': [], 'photo': [], 'new_chat_members': [], 'new_chat_photo': [], 'delete_chat_photo': False, 'group_chat_created': False, 'supergroup_chat_created': False, 'channel_chat_created': False, 'from': {'id': 543387116, 'first_name': 'Anya', 'is_bot': False, 'last_name': 'Nya', 'username': 'oveeen', 'language_code': 'en-US'}}}
+2018-06-18 15:28:24,355 - telegram.bot - DEBUG - Entering: send_message
+2018-06-18 15:28:24,460 - telegram.vendor.ptb_urllib3.urllib3.connectionpool - DEBUG - https://api.telegram.org:443 "POST /bot615630728:AAHu05nS8Ce4NnlGFxv1pwG7cGndF4HPhM8/sendMessage HTTP/1.1" 200 258
+2018-06-18 15:28:24,461 - telegram.bot - DEBUG - {'message_id': 21, 'date': 1529324904, 'chat': {'id': 543387116, 'type': 'private', 'username': 'oveeen', 'first_name': 'Anya', 'last_name': 'Nya'}, 'text': 'myaaaaa', 'entities': [], 'caption_entities': [], 'photo': [], 'new_chat_members': [], 'new_chat_photo': [], 'delete_chat_photo': False, 'group_chat_created': False, 'supergroup_chat_created': False, 'channel_chat_created': False, 'from': {'id': 615630728, 'first_name': 'ltrtest', 'is_bot': True, 'username': 'ltrtest_bot'}}
+2018-06-18 15:28:24,461 - telegram.bot - DEBUG - Exiting: send_message
+2018-06-18 15:28:24,462 - __main__ - DEBUG - /echo
+2018-06-18 15:28:34,416 - telegram.vendor.ptb_urllib3.urllib3.connectionpool - DEBUG - https://api.telegram.org:443 "POST /bot615630728:AAHu05nS8Ce4NnlGFxv1pwG7cGndF4HPhM8/getUpdates HTTP/1.1" 200 23
+2018-06-18 15:28:34,418 - telegram.bot - DEBUG - No new updates found.
+2018-06-18 15:28:34,418 - telegram.bot - DEBUG - []
+2018-06-18 15:28:34,419 - telegram.bot - DEBUG - Exiting: get_updates
+2018-06-18 15:28:34,419 - telegram.bot - DEBUG - Entering: get_updates
+2018-06-18 15:28:44,489 - telegram.vendor.ptb_urllib3.urllib3.connectionpool - DEBUG - https://api.telegram.org:443 "POST /bot615630728:AAHu05nS8Ce4NnlGFxv1pwG7cGndF4HPhM8/getUpdates HTTP/1.1" 200 23
+2018-06-18 15:28:44,490 - telegram.bot - DEBUG - No new updates found.
+2018-06-18 15:28:44,490 - telegram.bot - DEBUG - []
+2018-06-18 15:28:44,490 - telegram.bot - DEBUG - Exiting: get_updates
+2018-06-18 15:28:44,490 - telegram.bot - DEBUG - Entering: get_updates
+2018-06-18 15:28:54,550 - telegram.vendor.ptb_urllib3.urllib3.connectionpool - DEBUG - https://api.telegram.org:443 "POST /bot615630728:AAHu05nS8Ce4NnlGFxv1pwG7cGndF4HPhM8/getUpdates HTTP/1.1" 200 23
+2018-06-18 15:28:54,551 - telegram.bot - DEBUG - No new updates found.
+2018-06-18 15:28:54,552 - telegram.bot - DEBUG - []
+2018-06-18 15:28:54,552 - telegram.bot - DEBUG - Exiting: get_updates
+2018-06-18 15:28:54,552 - telegram.bot - DEBUG - Entering: get_updates
+2018-06-18 15:29:04,613 - telegram.vendor.ptb_urllib3.urllib3.connectionpool - DEBUG - https://api.telegram.org:443 "POST /bot615630728:AAHu05nS8Ce4NnlGFxv1pwG7cGndF4HPhM8/getUpdates HTTP/1.1" 200 23
+2018-06-18 15:29:04,615 - telegram.bot - DEBUG - No new updates found.
+2018-06-18 15:29:04,615 - telegram.bot - DEBUG - []
+2018-06-18 15:29:04,615 - telegram.bot - DEBUG - Exiting: get_updates
+2018-06-18 15:29:04,616 - telegram.bot - DEBUG - Entering: get_updates
+2018-06-18 15:29:14,676 - telegram.vendor.ptb_urllib3.urllib3.connectionpool - DEBUG - https://api.telegram.org:443 "POST /bot615630728:AAHu05nS8Ce4NnlGFxv1pwG7cGndF4HPhM8/getUpdates HTTP/1.1" 200 23
+2018-06-18 15:29:14,678 - telegram.bot - DEBUG - No new updates found.
+2018-06-18 15:29:14,678 - telegram.bot - DEBUG - []
+2018-06-18 15:29:14,678 - telegram.bot - DEBUG - Exiting: get_updates
+2018-06-18 15:29:14,679 - telegram.bot - DEBUG - Entering: get_updates
+2018-06-18 15:29:24,740 - telegram.vendor.ptb_urllib3.urllib3.connectionpool - DEBUG - https://api.telegram.org:443 "POST /bot615630728:AAHu05nS8Ce4NnlGFxv1pwG7cGndF4HPhM8/getUpdates HTTP/1.1" 200 23
+2018-06-18 15:29:24,741 - telegram.bot - DEBUG - No new updates found.
+2018-06-18 15:29:24,741 - telegram.bot - DEBUG - []
+2018-06-18 15:29:24,742 - telegram.bot - DEBUG - Exiting: get_updates
+2018-06-18 15:29:24,742 - telegram.bot - DEBUG - Entering: get_updates
+2018-06-18 15:29:34,803 - telegram.vendor.ptb_urllib3.urllib3.connectionpool - DEBUG - https://api.telegram.org:443 "POST /bot615630728:AAHu05nS8Ce4NnlGFxv1pwG7cGndF4HPhM8/getUpdates HTTP/1.1" 200 23
+2018-06-18 15:29:34,804 - telegram.bot - DEBUG - No new updates found.
+2018-06-18 15:29:34,805 - telegram.bot - DEBUG - []
+2018-06-18 15:29:34,805 - telegram.bot - DEBUG - Exiting: get_updates
+2018-06-18 15:29:34,805 - telegram.bot - DEBUG - Entering: get_updates
+2018-06-18 15:29:44,865 - telegram.vendor.ptb_urllib3.urllib3.connectionpool - DEBUG - https://api.telegram.org:443 "POST /bot615630728:AAHu05nS8Ce4NnlGFxv1pwG7cGndF4HPhM8/getUpdates HTTP/1.1" 200 23
+2018-06-18 15:29:44,866 - telegram.bot - DEBUG - No new updates found.
+2018-06-18 15:29:44,866 - telegram.bot - DEBUG - []
+2018-06-18 15:29:44,866 - telegram.bot - DEBUG - Exiting: get_updates
+2018-06-18 15:29:44,867 - telegram.bot - DEBUG - Entering: get_updates
+2018-06-18 15:29:54,930 - telegram.vendor.ptb_urllib3.urllib3.connectionpool - DEBUG - https://api.telegram.org:443 "POST /bot615630728:AAHu05nS8Ce4NnlGFxv1pwG7cGndF4HPhM8/getUpdates HTTP/1.1" 200 23
+2018-06-18 15:29:54,931 - telegram.bot - DEBUG - No new updates found.
+2018-06-18 15:29:54,931 - telegram.bot - DEBUG - []
+2018-06-18 15:29:54,932 - telegram.bot - DEBUG - Exiting: get_updates
+2018-06-18 15:29:54,932 - telegram.bot - DEBUG - Entering: get_updates
+2018-06-18 15:30:04,992 - telegram.vendor.ptb_urllib3.urllib3.connectionpool - DEBUG - https://api.telegram.org:443 "POST /bot615630728:AAHu05nS8Ce4NnlGFxv1pwG7cGndF4HPhM8/getUpdates HTTP/1.1" 200 23
+2018-06-18 15:30:04,993 - telegram.bot - DEBUG - No new updates found.
+2018-06-18 15:30:04,993 - telegram.bot - DEBUG - []
+2018-06-18 15:30:04,994 - telegram.bot - DEBUG - Exiting: get_updates
+2018-06-18 15:30:04,994 - telegram.bot - DEBUG - Entering: get_updates
+2018-06-18 15:30:15,055 - telegram.vendor.ptb_urllib3.urllib3.connectionpool - DEBUG - https://api.telegram.org:443 "POST /bot615630728:AAHu05nS8Ce4NnlGFxv1pwG7cGndF4HPhM8/getUpdates HTTP/1.1" 200 23
+2018-06-18 15:30:15,056 - telegram.bot - DEBUG - No new updates found.
+2018-06-18 15:30:15,056 - telegram.bot - DEBUG - []
+2018-06-18 15:30:15,057 - telegram.bot - DEBUG - Exiting: get_updates
+2018-06-18 15:30:15,057 - telegram.bot - DEBUG - Entering: get_updates
+2018-06-18 15:30:25,132 - telegram.vendor.ptb_urllib3.urllib3.connectionpool - DEBUG - https://api.telegram.org:443 "POST /bot615630728:AAHu05nS8Ce4NnlGFxv1pwG7cGndF4HPhM8/getUpdates HTTP/1.1" 200 23
+2018-06-18 15:30:25,133 - telegram.bot - DEBUG - No new updates found.
+2018-06-18 15:30:25,133 - telegram.bot - DEBUG - []
+2018-06-18 15:30:25,134 - telegram.bot - DEBUG - Exiting: get_updates
+2018-06-18 15:30:25,134 - telegram.bot - DEBUG - Entering: get_updates
+2018-06-18 15:30:35,195 - telegram.vendor.ptb_urllib3.urllib3.connectionpool - DEBUG - https://api.telegram.org:443 "POST /bot615630728:AAHu05nS8Ce4NnlGFxv1pwG7cGndF4HPhM8/getUpdates HTTP/1.1" 200 23
+2018-06-18 15:30:35,197 - telegram.bot - DEBUG - No new updates found.
+2018-06-18 15:30:35,197 - telegram.bot - DEBUG - []
+2018-06-18 15:30:35,197 - telegram.bot - DEBUG - Exiting: get_updates
+2018-06-18 15:30:35,197 - telegram.bot - DEBUG - Entering: get_updates
