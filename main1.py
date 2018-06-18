@@ -23,7 +23,7 @@ def error(bot, update, error):
 
 
 if __name__ == "__main__":
-    logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.DEBUG, filename='bot.log')
+    logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.DEBUG, filename='bot1.log')
     logger = logging.getLogger(__name__)
 
     updater = Updater(config1.token)
@@ -33,8 +33,8 @@ if __name__ == "__main__":
     dispatcher.add_handler(MessageHandler(Filters.text, echo))
     dispatcher.add_error_handler(error)
 
-     updater.start_webhook(listen="0.0.0.0", port=int(config1.port), url_path=config1.token)
-     updater.bot.setWebhook("https://{}.herokuapp.com/{}".format(config1.name, config1.token))
-    # updater.start_polling()
+    # updater.start_webhook(listen="0.0.0.0", port=int(config1.port), url_path=config1.token)
+    # updater.bot.setWebhook("https://{}.herokuapp.com/{}".format(config1.name, config1.token))
+     updater.start_polling()
 
     updater.idle()
