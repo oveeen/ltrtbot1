@@ -1,0 +1,40 @@
+2018-06-18 15:05:47,432 - telegram.ext.dispatcher - DEBUG - Setting singleton dispatcher as <telegram.ext.dispatcher.Dispatcher object at 0x7fb17150f7b8>
+2018-06-18 15:05:47,432 - JobQueue - DEBUG - JobQueue thread started
+2018-06-18 15:05:47,432 - telegram.ext.updater - DEBUG - dispatcher - started
+2018-06-18 15:05:47,433 - telegram.ext.updater - DEBUG - updater - started
+2018-06-18 15:05:47,433 - telegram.ext.updater - DEBUG - Updater thread started (polling)
+2018-06-18 15:05:47,433 - telegram.ext.updater - DEBUG - Start network loop retry bootstrap del webhook
+2018-06-18 15:05:47,433 - telegram.bot - DEBUG - Entering: delete_webhook
+2018-06-18 15:05:47,433 - telegram.vendor.ptb_urllib3.urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.telegram.org
+2018-06-18 15:05:47,434 - telegram.ext.dispatcher - DEBUG - Dispatcher started
+2018-06-18 15:05:47,641 - telegram.vendor.ptb_urllib3.urllib3.connectionpool - DEBUG - https://api.telegram.org:443 "POST /bot615630728:AAHu05nS8Ce4NnlGFxv1pwG7cGndF4HPhM8s/deleteWebhook HTTP/1.1" 401 58
+2018-06-18 15:05:47,642 - telegram.ext.updater - ERROR - Error while bootstrap del webhook: Unauthorized
+2018-06-18 15:05:47,643 - telegram.ext.updater - ERROR - Failed bootstrap phase after 0 retries (Unauthorized)
+2018-06-18 15:05:47,643 - telegram.ext.updater - ERROR - unhandled exception in updater
+Traceback (most recent call last):
+  File "/home/valkiriya/.local/lib/python3.6/site-packages/telegram/ext/updater.py", line 149, in _thread_wrapper
+    target(*args, **kwargs)
+  File "/home/valkiriya/.local/lib/python3.6/site-packages/telegram/ext/updater.py", line 266, in _start_polling
+    self._bootstrap(bootstrap_retries, clean=clean, webhook_url='', allowed_updates=None)
+  File "/home/valkiriya/.local/lib/python3.6/site-packages/telegram/ext/updater.py", line 433, in _bootstrap
+    'bootstrap del webhook', bootstrap_interval)
+  File "/home/valkiriya/.local/lib/python3.6/site-packages/telegram/ext/updater.py", line 326, in _network_loop_retry
+    onerr_cb(te)
+  File "/home/valkiriya/.local/lib/python3.6/site-packages/telegram/ext/updater.py", line 425, in bootstrap_onerr_cb
+    raise exc
+  File "/home/valkiriya/.local/lib/python3.6/site-packages/telegram/ext/updater.py", line 312, in _network_loop_retry
+    if not action_cb():
+  File "/home/valkiriya/.local/lib/python3.6/site-packages/telegram/ext/updater.py", line 403, in bootstrap_del_webhook
+    self.bot.delete_webhook()
+  File "/home/valkiriya/.local/lib/python3.6/site-packages/telegram/bot.py", line 60, in decorator
+    result = func(self, *args, **kwargs)
+  File "/home/valkiriya/.local/lib/python3.6/site-packages/telegram/bot.py", line 1888, in delete_webhook
+    result = self._request.post(url, data, timeout=timeout)
+  File "/home/valkiriya/.local/lib/python3.6/site-packages/telegram/utils/request.py", line 278, in post
+    **urlopen_kwargs)
+  File "/home/valkiriya/.local/lib/python3.6/site-packages/telegram/utils/request.py", line 213, in _request_wrapper
+    raise Unauthorized(message)
+telegram.error.Unauthorized: Unauthorized
+2018-06-18 15:05:48,434 - telegram.ext.dispatcher - CRITICAL - stopping due to exception in another thread
+2018-06-18 15:05:48,435 - telegram.ext.dispatcher - DEBUG - Dispatcher thread stopped
+2018-06-18 15:05:48,444 - telegram.ext.updater - DEBUG - dispatcher - ended
