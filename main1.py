@@ -5,7 +5,7 @@ from telegram.ext import CommandHandler
 from telegram.ext import MessageHandler
 from telegram.ext import Filters
 
-import config
+import config1
 
 
 def start(bot, update):
@@ -26,15 +26,15 @@ if __name__ == "__main__":
     logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.DEBUG, filename='bot.log')
     logger = logging.getLogger(__name__)
 
-    updater = Updater(config.token)
+    updater = Updater(config1.token)
     dispatcher = updater.dispatcher
 
     dispatcher.add_handler(CommandHandler('start', start))
     dispatcher.add_handler(MessageHandler(Filters.text, echo))
     dispatcher.add_error_handler(error)
 
-    # updater.start_webhook(listen="0.0.0.0", port=int(config.port), url_path=config.token)
-    # updater.bot.setWebhook("https://{}.herokuapp.com/{}".format(config.name, config.token))
-    updater.start_polling()
+     updater.start_webhook(listen="0.0.0.0", port=int(config1.port), url_path=config1.token)
+     updater.bot.setWebhook("https://{}.herokuapp.com/{}".format(config1.name, config1.token))
+    # updater.start_polling()
 
     updater.idle()
