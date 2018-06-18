@@ -1,4 +1,5 @@
 import logging
+import requests
 
 from telegram.ext import Updater
 from telegram.ext import CommandHandler
@@ -20,6 +21,12 @@ def echo(bot, update):
 
 def error(bot, update, error):
     logger.warning('Update "%s" caused error "%s"', update, error)
+
+
+def index(request):
+    r = requests.get('http://httpbin.org/status/418')
+    print(r.text)
+    return HttpResponse('<pre>' + (r.text) + '</pre>')
 
 
 if __name__ == "__main__":
