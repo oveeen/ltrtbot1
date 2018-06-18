@@ -23,7 +23,7 @@ def error(bot, update, error):
 
 
 if __name__ == "__main__":
-    logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO, filename='bot1.log')
+    logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.DEBUG, filename='bot1.log')
     logger = logging.getLogger(__name__)
 
     updater = Updater(config1.token)
